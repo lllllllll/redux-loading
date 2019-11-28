@@ -1,0 +1,1 @@
+export const user = { success: 'USER_SUCCESS', failure: 'USER_FAILURE', loading: 'LOADING' };
