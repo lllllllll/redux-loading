@@ -10,7 +10,7 @@ export default class Routes extends Component {
         <div className="App">
           <Loading />
           <Switch>
-            <Route strict path="/dashbourd" component={Dashboard} />
+            <Route strict path="/dashboard" component={Dashboard} />
             <Route strict path="/about-us" component={Aboutus} />
             <Route strict component={Dashboard} />
           </Switch>

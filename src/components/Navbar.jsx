@@ -4,8 +4,7 @@ export class Navbar extends Component {
   render() {
     return (
       <>
-        <Link to="/dashbourd">Dashbourd</Link> - 
-        <Link to="/about-us">About us</Link>
+        <Link to="/dashboard">dashboard</Link> - <Link to="/about-us">About us</Link>
       </>
     )
   }
