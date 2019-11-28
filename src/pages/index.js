@@ -1,5 +1,4 @@
 import Dashboard from './Dashboard';
+import Aboutus from './Aboutus'
 
-export {
-  Dashboard,
-}
+export { Dashboard, Aboutus }

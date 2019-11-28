@@ -1,16 +1,17 @@
-import React, { Component } from 'react'
-// import T from 'prop-types'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import _ from 'lodash';
 
-export class Loading extends Component {
-  static propTypes = {}
+const Loading = () => {
+  const getLoading = useSelector(state => _.findKey(state , ['status', 'PENDING']));
+  return (
+    <>
+      {getLoading ?
+        <div className="Box-load">
+          <div className="loading">Loading...</div>
+        </div> : null}
+    </>
+  );
+};
 
-  render() {
-    return (
-      <div>
-        <h1>Loading...</h1>
-      </div>
-    )
-  }
-}
-
-export default Loading
+export default Loading;

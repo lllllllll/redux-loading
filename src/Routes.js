@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Dashboard } from './pages';
+import { Dashboard, Aboutus } from './pages';
 import { Loading } from './components';
 
 export default class Routes extends Component {
@@ -11,6 +11,7 @@ export default class Routes extends Component {
           <Loading />
           <Switch>
             <Route strict path="/dashbourd" component={Dashboard} />
+            <Route strict path="/about-us" component={Aboutus} />
             <Route strict component={Dashboard} />
           </Switch>
         </div>

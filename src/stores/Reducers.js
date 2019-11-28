@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { user } from './Types';
+import { user, userAll } from './Types';
 
 function checkAction(state, action, typeCase) {
   switch (action.type) {
@@ -13,7 +13,8 @@ function checkAction(state, action, typeCase) {
 };
 
 const getUser = (state = {}, action) => checkAction(state, action, user);
+const getUserAll = (state = {}, action) => checkAction(state, action, userAll);
 
 export default combineReducers({
-  getUser,
+  getUser, getUserAll
 });

@@ -1,1 +1,2 @@
-export const user = { success: 'USER_SUCCESS', failure: 'USER_FAILURE', loading: 'LOADING' };
+export const user = { success: 'USER_SUCCESS', failure: 'USER_FAILURE', loading: 'USER_LOADING' };
+export const userAll = { success: 'USER_ALL_SUCCESS', failure: 'USER_ALL_FAILURE', loading: 'USER_ALL_LOADING' };

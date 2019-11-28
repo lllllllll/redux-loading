@@ -3,6 +3,8 @@ import T from 'prop-types'
 import { connect } from 'react-redux';
 
 import { fetchUser } from '../stores/Actions';
+import { Navbar } from '../components';
+import '../scss/Dashboard.scss';
 
 export class Dashboard extends Component {
   static propTypes = {
@@ -19,9 +21,10 @@ export class Dashboard extends Component {
 
   render() {
     return (
-      <div>
+      <>
+        <Navbar />
         <h1>Dashboard</h1>
-      </div>
+      </>
     )
   }
 }
